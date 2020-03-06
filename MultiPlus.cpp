@@ -35,8 +35,8 @@ int main()
 		a[i]=0;
 		if(i>=n2)
 		b[i]=0;
-		int c=a[i]+b[i];
-		a[i]=c%10+jinwei;
+		int c=a[i]+b[i]+jinwei;
+		a[i]=c%10;
 		jinwei=c/10;
 	}
 	if(jinwei)
