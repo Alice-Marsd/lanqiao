@@ -1,5 +1,5 @@
-#include<iostream>
-using namespace std;
+#include<stdio.h>
+#include<stdlib.h>
 int cnt=1;
 void PrintMartix(int **a,int col,int rol,int start)
 {
@@ -34,16 +34,15 @@ void PrintMartix(int **a,int col,int rol,int start)
 int main()
 {
 	int m,n;
-	cin >> m >> n;
-	int **pArray=new int[100];
-
-	int start=0;
-	while(m>start*2 && n >>start*2)
-	{
-		PrintMartix(pArray,m,n,start);
-		start++;
-	}
-				
+	int pArray[10][10]={0};
+	scanf("%d %d",&m,&n);
+//	int start=0;
+//	while(m>start*2 && n >>start*2)
+//	{
+//		PrintMartix(pArray,m,n,start);
+//		start++;
+//	}
+//				
 	for(int i=0;i<m;++i)
 	{
 		for(int j=0;i<n;++j)
