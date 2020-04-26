@@ -1,5 +1,5 @@
 #include<stdio.h>
-int n=2;
+int n=4;
 int count=0;
 void f(int left,int right)
 {

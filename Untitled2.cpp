@@ -23,12 +23,6 @@ int main()
 		        	dp[i][j] = (dp[i-1][j+1] + dp[i][j-1]) % 10000;
 		        }
 			} 
-	for (int i = 1; i <=m; i++) 
-	{
-		for(int j=1;j<=n;++j)
-		printf("%d\t",dp[i][j]);
-		printf("\n");
-	}
 	int result = (m & 1)==1 ? dp[m][1] : dp[m][n];
 	printf("%d",result);
 	return 0; 
